@@ -266,7 +266,7 @@
 //  }
 
 // //  Exemplo de uso:
-// const notaAluno = 75;
+// const notaAluno = 95;
 // const limiteA = 90;
 // const limiteB = 80;
 // const limiteC = 70;
@@ -321,34 +321,34 @@
 // base na faixa de nota obtida. As sugestões devem ajudar o aluno a identificar áreas específicas
 // onde ele pode melhorar seu desempenho.
 
-// function classificarNota(nota, limiteA, limiteB, limiteC, notaMinima) {
-//     if (nota <0 || nota >100 ){
-//         return "Nota inválida - deve está no intervalo entre 0 e 100."
-//     }
-//     if (nota >= limiteA) {
-//       let comentario = prompt(`Digite um comentário sobre a nota ${notaAluno} do aluno:`,'parabéns')
-//       return `Você está na melhores notas A - continue assim você vai longe - o intervalo da nota A é entre ${limiteA} e 100 - ${comentario}`;
-//     } else if (nota >= limiteB) {
-//       let comentario = prompt(`Digite um comentário sobre a nota ${notaAluno} do aluno:`)
-//       return `Você está quase lá - sua nota foi B - estude só mais um pouco - o intervalo da nota B é entre ${limiteB} e ${limiteA} - ${comentario}`;
-//     } else if (nota >= limiteC) {
-//       let comentario = prompt(`Digite um comentário sobre a nota ${notaAluno} do aluno:`)
-//       return `A sua nota foi C - seu estudo é seu futuro - esforce-se mais - o intervalo da nota C é entre ${limiteC} e ${limiteB} - ${comentario}`;
-//     } else if (nota >= notaMinima){
-//       let comentario = prompt(`Digite um comentário sobre a nota ${notaAluno} do aluno:`)
-//       return 'A sua nota foi D - Priorize os estudos - o reconhecimento virá - o intervalo da nota D é entre ${limiteC} e ${limiteD} - ${comentario}`'
-//     }else {  
-//       let comentario = prompt(`Digite um comentário sobre a nota ${notaAluno} do aluno:`)  
-//       return `Você está quase lá - sua nota foi ${nota} - D, só faltou ${notaMinima-nota} pontos para passar - você vai para recuperação precisanto tirar  ${(notaMinima-nota)+notaMinima} - a média é ${notaMinima} - ${comentario}`;
-//     }
-//  }
+function classificarNota(nota, limiteA, limiteB, limiteC, notaMinima) {
+    if (nota <0 || nota >100 ){
+        return "Nota inválida - deve está no intervalo entre 0 e 100."
+    }
+    if (nota >= limiteA) {
+      let comentario = prompt(`Digite um comentário sobre a nota ${notaAluno} do aluno:`,'parabéns')
+      return `Você está na melhores notas A - continue assim você vai longe - o intervalo da nota A é entre ${limiteA} e 100 - ${comentario}`;
+    } else if (nota >= limiteB) {
+      let comentario = prompt(`Digite um comentário sobre a nota ${notaAluno} do aluno:`)
+      return `Você está quase lá - sua nota foi B - estude só mais um pouco - o intervalo da nota B é entre ${limiteB} e ${limiteA} - ${comentario}`;
+    } else if (nota >= limiteC) {
+      let comentario = prompt(`Digite um comentário sobre a nota ${notaAluno} do aluno:`)
+      return `A sua nota foi C - seu estudo é seu futuro - esforce-se mais - o intervalo da nota C é entre ${limiteC} e ${limiteB} - ${comentario}`;
+    } else if (nota >= notaMinima){
+      let comentario = prompt(`Digite um comentário sobre a nota ${notaAluno} do aluno:`)
+      return 'A sua nota foi D - Priorize os estudos - o reconhecimento virá - o intervalo da nota D é entre ${limiteC} e ${limiteD} - ${comentario}`'
+    }else {  
+      let comentario = prompt(`Digite um comentário sobre a nota ${notaAluno} do aluno:`)  
+      return `Você está quase lá - sua nota foi ${nota} - D, só faltou ${notaMinima-nota} pontos para passar - você vai para recuperação precisanto tirar  ${(notaMinima-nota)+notaMinima} - a média é ${notaMinima} - ${comentario}`;
+    }
+ }
 
-// //  Exemplo de uso:
-// const notaAluno = 50;
-// const limiteA = 90;
-// const limiteB = 80;
-// const limiteC = 70;
-// const notaMinima = 60;
+//  Exemplo de uso:
+const notaAluno = 50;
+const limiteA = 90;
+const limiteB = 80;
+const limiteC = 70;
+const notaMinima = 60;
 
-// const classificacao = classificarNota(notaAluno, limiteA, limiteB, limiteC, notaMinima);
-// alert(classificacao);
+const classificacao = classificarNota(notaAluno, limiteA, limiteB, limiteC, notaMinima);
+alert(classificacao);

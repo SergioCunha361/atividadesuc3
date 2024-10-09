@@ -1,3 +1,0 @@
-bbnbnb
-git TextDecoderStream
-testando
