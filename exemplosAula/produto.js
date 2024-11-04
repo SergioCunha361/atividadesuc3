@@ -22,7 +22,7 @@ class Produto {
     }
 
     set setPreco(preco) {
-        this.#nome = preco;
+        this.#preco = preco;
     }
     getInfoProduto () {
         return `${this.#nome} - R$ ${this.#preco}`

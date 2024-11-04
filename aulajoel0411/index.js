@@ -1,9 +1,10 @@
 const prompt = require('prompt-sync')();
-const { Produto } = require('./produto');
-const { Pedido } = require('./pedido');
+const { Jogador } = require('./jogador');
+const { Dado } = require('./dado');
+const { SisAzar } = require('./sisAzar');
 
-function  adcionarProdutosAoPedido(){
-    const pedido = new Pedido();
+function  escolherNumero(){
+    const numero = new numero();
     while (true){
         const nome = prompt("Digite o nome do produto(ou 'sair' para finalizar");
         if (nome.toLowerCase()==="sair") break;
