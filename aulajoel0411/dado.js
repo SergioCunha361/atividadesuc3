@@ -1,20 +1,23 @@
 // Definindo a classe Produto
 class Dado {
-    #dado
+    #face
     
 
     constructor( ) {
-        this.#dado = Math.floor(Math.random() * 6) + 1;;
+        this.#face = Math.floor(Math.random() * 6) + 1;;
         Object.freeze(this);
     }
    
-    get getDado() {
-        return this.#dado;
+    get getFace() {
+        return this.#face;
     }
-
-    set setDado(dado) {
-        this.dado = dado;
+    set setFace(face){
+        this.#face = face;
     }
-
 }
+
+
 module.exports = { Dado };
+
+// let dado01 = new Dado();
+// console.log(dado01.getFace)

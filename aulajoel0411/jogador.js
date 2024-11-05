@@ -26,3 +26,7 @@ class Jogador {
     }
 }
 module.exports = { Jogador };
+
+
+// let jogador01= new Jogador("joel", 4);
+// console.log("O jogador",jogador01.getNome, "apostou no nº",jogador01.getAposta)

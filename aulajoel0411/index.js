@@ -1,28 +1,21 @@
-const prompt = require('prompt-sync')();
-const { Jogador } = require('./jogador');
-const { Dado } = require('./dado');
-const { SisAzar } = require('./sisAzar');
+const prompt = require ("prompt-sync")()
+const { Dado } = require ("./dado");
+const { Jogador } = require ("./jogador");
+const { sistemaAzar } = require("./sistemaAzar");
 
-function  escolherNumero(){
-    const numero = new numero();
-    while (true){
-        const nome = prompt("Digite o nome do produto(ou 'sair' para finalizar");
-        if (nome.toLowerCase()==="sair") break;
-        const preco = parseFloat(prompt("Digite o preço do produto"));
-        if(isNaN(preco) || preco <= 0) {
-            console.log("Preço inválido. Tente Novamente");
-            continue;
-        }
-        const pedido = new Pedido();
-        pedido.adicionarProduto(nome, preco);
-        pedido.adicionarProduto(produto);
-        console.log(`Produto "${produto.getNome}" adicionado com sucesso!`)
-    }
-    pedido.mostrarPedido();
-} 
-adcionarProdutosAoPedido();
+function executar(){
+     console.log("Bem-vindo ao Sistama Azar 1.0");
+     let novoTurno = ""
+do {
+    const nome = prompt("Qual o nome do jogador: ");
+    const aposta = parseInt(prompt("Digite um valor de 1 a 6: "));
+    const lance = new Dado();
+    const jogador01 = new Jogador(nome, aposta);
+    const tigrinho = new sistemaAzar(lance, jogador01);
+    tigrinho.verificarGanhador();
+    novoTurno = prompt("Digite N para sair e qualquer tecla para continuar!");
+} while(novoTurno.toUpperCase  === "N");
+console.log("Até logo");
 
-
-
-
-
+}
+executar();
