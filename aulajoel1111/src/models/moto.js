@@ -27,7 +27,7 @@ class Moto extends Veiculo {
         console.log(`Marca: ${this.getMarca}, Ano: ${this.getAno}, Cor: ${this.getCor}, Modelo: ${this.getModelo}.`);
     }
     calcularValor(){
-    console.log(`Valor estimado da moto: R$ ${(2024 - this.getAno) * 100}`);
+    console.log(`Valor estimado da moto: R$ ${(this.getAno) * 10}`);
     }
 
 }

@@ -1,9 +1,10 @@
 class Veiculo {
-    #ano
     #marca
+    #ano
+    
     constructor (marca, ano) {
         this.#marca = marca;
-        this.ano = ano;
+        this.#ano = ano;
         Object.freeze(this);
     }
 
