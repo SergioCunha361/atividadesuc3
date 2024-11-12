@@ -9,9 +9,9 @@ const { Ave } = require ("./ave")
 // a1.emitirSom();
 // c1.emitirSom();
 // console.log(c1.getNome); //importou getNome do pai animal já que nao tinha no  cachorro.
-let a1 = new Animal  ("Sérgio" , 59)
-let m1= new Mamifero  ("Gabriel", 18, "branco", "Cidade")
-let ave1 = new Ave  ("Penguim",5,"grande","Não voo")
+let a1 = new Animal("Sérgio" , 59)
+let m1= new Mamifero("Gabriel", 18, "branco", "Cidade")
+let ave1 = new Ave("Penguim",5,"grande","Não voo")
 
 a1.getInfo()
 m1.getInfo()

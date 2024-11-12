@@ -1,12 +1,11 @@
-class Animal{
+class Animal {
     #nome
-    #idade
-    
+    #idade   
     
     constructor (nome, idade) {
         this.#nome  = nome
         this.#idade = idade
-        
+      
     }
     get getNome(){
         return this.#nome
@@ -25,7 +24,7 @@ class Animal{
         console.log("O som emite um som genérico")
     }
     getInfo(){
-        console.log(`O nome: ${this.#nome}, idade: ${this.#idade}.`)
+        console.log(`O nome: ${this.getNome}, idade: ${this.getIdade}.`)
     }
 }
 

@@ -1,4 +1,4 @@
-const { Veiculo } = require ("../models/carro")
+const { Veiculo } = require ("../models/veiculo")
 const { Carro } = require ("../models/carro");
 const { Moto } = require ("../models/moto");
 const bancoVeiculos = [];
@@ -20,17 +20,19 @@ class VeiculoController{
             return;
         }
         bancoVeiculos.push(veiculo);
+        
         console.log("Veículo cadastrado com sucesso !!!");
         
     }
-    listarVeículos(){
+    listarVeiculo(){
         if (bancoVeiculos.length > 0 ) {
             console.log("=== Veículos Registrados ===");
             bancoVeiculos.forEach((veiculo, index) => {
             console.log(`${index + 1}`)
             veiculo.getInfo();
-            veiculo.calcaularValor();
+            veiculo.calcularValor();
             })
+          
         } else {
             console.log("Nenhum veículo resgistrado!")
         }

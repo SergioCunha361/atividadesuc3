@@ -1,4 +1,4 @@
-const { Animal }= require ("./animal");
+const { Animal } = require ("./animal");
 
 
 class Mamifero extends Animal{

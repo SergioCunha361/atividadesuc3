@@ -18,9 +18,11 @@ function iniciarSistema(){
             case "2":
                 controller.listarVeiculo();
                 break;
+            case "3":
+                    console.log("Saindo do sistema ...");
+                    break;   
             default:
                 console.log("Opção Inválida");
-
         }
     } while (opcao !== "3");
 }
