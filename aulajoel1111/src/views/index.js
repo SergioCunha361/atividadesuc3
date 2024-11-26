@@ -11,7 +11,7 @@ function iniciarSistema(){
         console.log("2. Listar Veiculo")
         console.log("3. Editar Veiculo")
         console.log("4. Excluir Veiculo")
-        console.log("5. Sair");
+        console.log("0. Sair");
         opcao = prompt ("Escola uma opção: ")
         switch (opcao) {
             case "1":
@@ -65,4 +65,22 @@ function editarVeiculo(){
         console.log("informe um indice válido")
     }
 }
+//incluida a funcao editar veiculo --ver indice -1
+// function excluirVeiculo(){
+//         controller.listarVeiculo();      
+//         const indice = parseInt(prompt("Digite o indice que você deseja editar: "))
+//         const result = controller.buscarId(indice-1);
+//         if (result){
+//             const conf = prompt("Confirma exclusão S/N ?");
+//             if (conf.toUpperCase === "S"){
+//                 bancoVeiculos.splice(indice-1, 1);
+//                 controller.listarVeiculo(); 
+//                 return
+//             }
+//         } else {
+//             console.log("informe um indice válido")
+//         }
+            
+// }
 iniciarSistema();
+
